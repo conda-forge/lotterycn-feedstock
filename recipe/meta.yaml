@@ -1,18 +1,18 @@
 {% set name = "lotterycn" %}
-{% set version = "0.0.4" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lotterycn-{{ version }}.tar.gz
-  sha256: d859bf738628efba03db9de061eb532cf296e0256c7ce1d06ca79f0d5aa90c09
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/lotterycn-{{ version }}.tar.gz
+  sha256: f5785c6b94ce2e65e7d4d98d1f37cb71d3c5974f3cc4618b3d9d9d6257797e76
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
