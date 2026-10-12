@@ -18,12 +18,13 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=84.0.0
   run:
     - python >={{ python_min }}
-    - tqdm >=4.64.1
-    - numpy >=1.21.6
-    - pandas >=1.4.0
-    - requests >=2.28.1
+    - rich >=15.0.0
+    - pandas >=2.3.3
+    - numpy >=1.26.4
+    - requests >=2.34.2
 
 test:
   imports:
