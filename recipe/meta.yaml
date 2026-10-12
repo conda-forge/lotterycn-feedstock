@@ -1,5 +1,5 @@
 {% set name = "lotterycn" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/lotterycn-{{ version }}.tar.gz
-  sha256: f5785c6b94ce2e65e7d4d98d1f37cb71d3c5974f3cc4618b3d9d9d6257797e76
+  sha256: d14309a3b8668910aaeddbc6eaf84d84031120b2428d0b1a903cb3c416afe4a8
 
 build:
   noarch: python
